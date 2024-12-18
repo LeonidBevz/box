@@ -1,0 +1,87 @@
+.App{
+  padding: 20px;
+  gap: 20px;
+ 
+}
+.result{
+  flex: 0.5;
+  background-color: var(--card-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.scan-butt{
+  background-color: var(--card-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--main-green-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+.rate-container{
+  margin-bottom: 20px;
+}
+.rate-container p{
+  margin: 3px 0px;
+  font-size: 20px;
+}
+.decidion-container{
+  margin-bottom: 20px;
+}
+.decidion-container p{
+  margin: 3px 0px;
+  font-size: 20px;
+}
+.result-buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 300px;
+}
+.result-buttons button{
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  color: var(--alt-text-color);
+  font-size: 20px;
+  cursor: pointer;
+  flex: 1;
+}
+.inc{
+  background-color: var(--main-green-color);
+}
+
+.no-inc{
+  background-color: var(--main-red-color);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+  .result{
+    width: 100%;
+    min-height: 300px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .rate-container{
+    display: flex;
+    gap: 20px
+  }
+  .decidion-container{
+    display: flex;
+    gap: 20px
+  }
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .App{
+    display: flex;
+  }
+  .result{
+    max-width: 300px;
+  }
+}
